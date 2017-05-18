@@ -97,6 +97,11 @@ public:
    */
   void Prediction(double delta_t);
 
+  MatrixXd GenerateSigmaPoints();
+  void SigmaPointPrediction(double delta_t, MatrixXd Xsig_aug) ;
+  void PredictMeanAndCovariance();
+
+
   /**
    * Updates the state and the state covariance matrix using a laser measurement
    * @param meas_package The measurement at k+1

@@ -20,6 +20,10 @@ public:
   */
   Eigen::VectorXd CalculateRMSE(const std::vector<Eigen::VectorXd> &estimations, const std::vector<Eigen::VectorXd> &ground_truth);
 
+  /**
+  * function to force x between -pi and pi
+  */
+  float ModPi(float x);
 };
 
 #endif /* TOOLS_H_ */
